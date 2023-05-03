@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #240141;
+    position:sticky;
+    
+    
+
+
+
+}
+a{
+    margin: 10px;
+    color: floralwhite;
+    text-decoration-line: none;
+    border: 2px solid #240141;
+    border-radius: 4px;
+    width:fit-content ;
+    
+
+}
+a:hover{ background-color:#400073 ;
+    box-shadow: 1px 2px 5px 2px black;
+
+}
+.navbar1{
+    display: flex;
+    background-color: #240141;
+    width: 100%;
+    justify-content: space-between;
+}
+.search{
+   margin: 10px 20px;
+  
+   scale: 1.1;
+   
+  
+}
+input{
+    border: 3px solid black;
+    border-radius: 10px;
+
+    
+
+}
+input:focus{
+    box-shadow: 0 0 5px 5px #400073;
+    border: 2px solid black;
+}

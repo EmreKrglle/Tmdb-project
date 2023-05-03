@@ -1,0 +1,185 @@
+@import "navbar.css";
+@import "paging.css";
+@import "aboutUs.css";
+
+
+html {
+  background-color: #556e78;
+  ;
+  background-blend-mode:hard-light;
+  scroll-behavior: smooth;
+
+}
+body::-webkit-scrollbar{
+ width: 10px;
+ background-color: #556e78; 
+
+ 
+}
+body::-webkit-scrollbar-thumb{
+  color: #fff;
+  background-color:#2b163b;
+  border: 2px solid black;
+  border-radius: 8%;
+  
+}
+
+
+
+
+
+.populerMovie{
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items:flex-start;
+  row-gap: 20px;
+  column-gap: 10px;
+  
+}
+
+.pList{
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  background-color:#400073;
+  align-items:flex-start;
+  justify-content: flex-start;
+  border: #400073 solid 2px;
+  border-radius: 25px;
+  transition:  transform 0.1s ease-in;;
+
+}
+.ayse{
+  background-color: #000;
+  color: #fff;
+  display: none;
+
+
+}
+.pList:hover + .ayse {
+
+  display: flex;
+  
+}
+.pList:hover  {
+  opacity: 25%;
+}
+.title{
+  color: #000;
+  overflow: clip;
+  position: absolute;
+  transform: translateY(19px);
+  transform: translateX(15px);
+  z-index: -1;
+  max-width: 200px;
+  scale: 1.1;
+  
+}
+
+::selection{
+  background-color: red;
+  
+}
+
+.vote{
+  color:#400073;
+}
+
+
+.populerImage{
+  border: 2px solid #000 ;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 450px;
+  width: 300px ;
+
+}
+
+.selectedImg{
+    box-shadow: 0 0 10px 10px #000;
+  }
+
+.image-imdb{
+  display: flex;
+  gap: 10px;
+}
+.image-imdb > h2{
+  display: flex;
+  color: yellow;
+align-items: center;
+}
+
+.side-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: flex-start;
+  row-gap: 2px;
+  
+  transform: translateX(-10px);
+  
+  
+}
+.vote-average {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellowgreen ;
+  margin-left: 5px;
+  height:5%;
+  
+}
+.release{
+  color: yellow;
+  margin-left: 5px;
+ 
+ 
+}
+.overview{
+  color: rgb(255, 255, 255);
+  width: 50%;
+}
+.back{
+  background-color: black;
+  color: aliceblue;
+  border: black 2px solid;
+  border-radius: 6px;
+  width: 5%;
+  height: 40px;
+  cursor: pointer;
+  transition: box-shadow .1s ease-in, font-size .1s ease-in-out;
+}
+.back:hover{
+  background-color: white;
+  color: #000;
+  border: white 2px solid;
+  box-shadow: 0 0 5px 5px black;
+  font-size: larger;
+  
+  
+}
+.companies_atag{
+  text-decoration: none;
+  border: none;
+  width: max-content;
+  height:max-content ;
+}
+.companies_logo{
+  width: 75px;
+  height: 59px;
+}
+
+
+.imdb{
+  width: 60px;
+}
+
+.genres{
+  display:flex ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: red;
+}
